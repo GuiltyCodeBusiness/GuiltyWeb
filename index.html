@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilty Code</title>
+    <link rel="icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./assets/Logo.svg" alt="Logo">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <!-- <li><a href="#trabajo">Nuestro trabajo</a></li> -->
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav class="navbar-mobile">
+            <div class="close-menu">✖</div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="banner-video-background">
+            <video class="video-inicio" autoplay muted loop id="background-banner-video">
+                <source src="assets/banner.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section id="nosotros" class="nosotros">
+        <div class="nosotros-content">
+            <div class="nosotros-left">
+                <h2>SOBRE NOSOTROS</h2>
+                <br>
+                <img src="./assets/icono-code.svg" alt="< / >" />
+            </div>
+            <div class="nosotros-right">
+                <div class="nosotros-right-container">
+                    <p class="text-info">Guilty Code es una empresa de software a medida.</p>
+                    <p class="text-info">Creamos soluciones tecnológicas innovadoras y personalizadas para satisfacer
+                        las necesidades únicas de cada cliente. Nuestra misión es ser tu socio tecnológico de confianza
+                        proporcionando soluciones de alta calidad que impulsen tu crecimiento y éxito.</p>
+                </div>
+            </div>
+        </div>
+        <div class="mision-vision-background">
+            <video autoplay muted loop id="background-mision-vision">
+                <source src="assets/mision-vision.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section id="servicios" class="servicios">
+        <div class="servicios-content">
+            <div class="servicios-left">
+                <div class="servicios-left-container">
+                    <p class="text-info">Desarrollamos software a medida desde aplicaciones web y móviles, creando
+                        experiencias personalizadas para cada cliente, de acuerdo a sus necesidades específicas.</p>
+                    <p class="text-info">Además integramos sistemas de CRM y ERP para gestionar diferentes áreas de tu
+                        negocio.</p>
+                </div>
+
+            </div>
+            <div class="servicios-right">
+                <h2>NUESTROS SERVICIOS</h2>
+                <img src="./assets/icono-code.svg" alt="< / >" />
+            </div>
+        </div>
+        <div class="servicios-three-box">
+            <div class="servicio-box box1" id="box1">
+                <p class="servicio-text">Desarrollo de software a medida</p>
+            </div>
+            <div class="servicio-box box2" id="box2">
+                <p class="servicio-text">Aplicaciones web y móviles</p>
+            </div>
+            <div class="servicio-box box3" id="box3">
+                <p class="servicio-text">Integración de CRM y ERP</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <h1 class="contacto-title">Contacto</h1>
+        <div class="contacto-form">
+            <div class="form-social-media">
+                <div class="link-social-media">
+                    <img src="./assets/icono-email.svg" alt="NOIMG" class="logo-social-media">
+                    <p>guilty.code.business@gmail.com</p>
+                </div>
+                <!-- <div class="link-social-media">
+                    <img src="./assets/icono-telefono.svg" alt="NOIMG" class="logo-social-media">
+                    <p>+5522152957</p>
+                </div>
+                <div class="link-social-media">
+                    <img src="./assets/icono-ubicación.svg" alt="NOIMG" class="logo-social-media">
+                    <p>Oficina central 123</p>
+                </div> -->
+                <div class="link-social-media">
+                    <img src="./assets/icono-FB.svg" alt="NOIMG" class="logo-social-media">
+                    <p>Facebook</p>
+                </div>
+                <div class="link-social-media">
+                    <img src="./assets/icono-instagram.svg" alt="NOIMG" class="logo-social-media">
+                    <p>Instagram</p>
+                </div>
+                <div class="link-social-media">
+                    <img src="./assets/icono-behance.svg" alt="NOIMG" class="logo-social-media">
+                    <p>Behance</p>
+                </div>
+            </div>
+            <div class="form-container">
+                <h3 id="form-title" class="form-title">Envíanos un mensaje</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input class="input-text" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input class="input-text" type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea class="input-text" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group button">
+                        <button type="submit" id="sendMessage">Enviar</button>
+                    </div>
+                </form>
+                <div id="success-message-container" class="success-message-container">
+                    <svg class="icon-success" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                        <circle cx="26" cy="26" r="25" fill="none" stroke="#28a745" stroke-width="2" />
+                        <path fill="none" stroke="#28a745" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" d="M14 27l7 7 16-16" />
+                    </svg>
+                    <span class="span-message-success">
+                        Mensaje enviado correctamente
+                    </span>
+                    <div class="form-group button">
+                        <button id="restart-form">Enviar otro mensaje</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
